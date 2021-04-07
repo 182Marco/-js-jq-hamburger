@@ -108,3 +108,28 @@ header {
 .show {
   display: block;
 }
+.slide-left {
+  animation: left-slide 0.15s;
+}
+
+.slide-back {
+  animation: slide-back 0.15s forwards;
+}
+
+@keyframes left-slide {
+  0% {
+    left: -100vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-back {
+  100% {
+    left: 0;
+  }
+  100% {
+    left: -100vw;
+  }
+}
